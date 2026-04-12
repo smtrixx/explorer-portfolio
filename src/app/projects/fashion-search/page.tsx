@@ -255,10 +255,10 @@ useEffect(() => {
 
                         <div className="overflow-hidden rounded-xl">
                           <img
-                            src={`/fashion-thumbs/${item.index}.jpg`}
-                            alt={item.category}
-                            className="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
-                          />
+  src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${item.image_url}`}
+  alt={item.category}
+  className="h-56 w-full object-cover transition duration-300 group-hover:scale-105"
+/>
                         </div>
 
                         <div className="mt-3 flex items-center justify-between">
