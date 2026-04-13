@@ -35,6 +35,27 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Soham Rathi",
+              url: "https://sohamrathi.com",
+              sameAs: [
+                "https://github.com/smtrixx",
+                "https://linkedin.com/in/YOUR_LINKEDIN",
+              ],
+              jobTitle: "Machine Learning Engineer",
+              description:
+                "Machine learning engineer building AI systems including fashion semantic search and forex prediction.",
+            }),
+          }}
+        />
+      </head>
+
       <body className="min-h-full flex flex-col">
         <PostHogProvider>{children}</PostHogProvider>
       </body>
