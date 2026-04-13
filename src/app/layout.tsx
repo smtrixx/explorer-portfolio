@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rathi ML World",
-  description: "AI/ML Projects Portfolio",
+  title: "Soham Rathi | Machine Learning Engineer",
+  description:
+    "Portfolio of Soham Rathi showcasing machine learning projects including fashion semantic search and stock prediction systems.",
 };
 
 export const viewport = {
